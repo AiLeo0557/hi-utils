@@ -1,6 +1,6 @@
 {
-  "name": "hi-utils",
-  "version": "0.0.1",
+  "name": "hi-utils-pro",
+  "version": "1.0.1",
   "description": "",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -9,9 +9,9 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@babel/core": "^7.26.9",
+    "@babel/core": "^7.26.10",
     "@babel/preset-env": "^7.26.9",
-    "@babel/preset-typescript": "^7.26.0",
+    "@babel/preset-typescript": "^7.27.0",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -19,13 +19,8 @@
     "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "axios": "^1.7.9",
-    "dayjs": "^1.11.13",
-    "element-plus": "^2.9.4",
     "hi-datatype-operation": "^1.0.5",
     "hi-guardian": "^1.0.4",
-    "sm-core": "^1.0.0",
-    "vue-router": "^4.5.0",
     "hi-validator": "^1.0.2"
   },
   "type": "module",
