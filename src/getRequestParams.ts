@@ -71,7 +71,9 @@ export function getRequestParams(param_obj: Record<string, any>, param_options: 
       let param_value: any; // 获取参数值
       // 如果参数名包含runcode_，则执行代码
       if (param_key_name.includes('runcode_')) {
-        param_value = eval(param_key_name.replace('runcode_', '')); // 执行代码
+        const run_code = param_key_name.replace('runcode_', 'return '); // 获取代码
+        const getRunResult = new Function('param_obj', run_code); // 创建函数
+        param_value = getRunResult(param_obj); // 执行代码
       }
       // 如果参数名是数组，则获取数组中的每一项的值
       else if (Array.isArray(param_key_name)) {
