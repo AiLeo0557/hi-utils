@@ -1,3 +1,4 @@
+import { describe, expect, beforeAll, it } from 'vitest'
 import {
   getFieldValueByPath,
   getFormatNum,
@@ -8,7 +9,7 @@ import {
   getFiltedObjByFields,
   // isType,
   isHiRequestArgument,
-} from '../dist/index.cjs'
+} from '../dist/index.js'
 
 // const {
 //   getDataType,
